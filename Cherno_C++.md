@@ -153,7 +153,23 @@ html:
   - [48.1 vector中频繁地触发allocate是拖慢程序的原因之一]()
   - [48.2 vector reserve]()
   - [48.3 vector emplace_back]()
-
+- [四十九. C++中使用库(静态链接)]()
+  - [49.1 下载库是32位还是64位取决于自己的应用程序的位数]()
+  - [49.2 static library库会被放到你的可执行文件中]()
+  - [49.3 dynamic library是在运行时被链接的]()
+  - [49.4 LoadLibrary]()
+  - [49.5 使用库步骤：a.Property->C/C++->General->Additional Include Directories b.Property->Linker->General->Additional Library Dependencies c.Property->Linker->Input->Additional Dependencies]()
+  - [49.6 还可以把库源码放到工程中自己构建]()
+  - [49.7 函数声明前加extern "C”，作用是对在C++中使用C语言编译的库时，让C函数保持原貌]()
+  - [49.8 运行时链接中如何提取函数(Loadlibrary和GetProcAddress)]()
+- [五十. C++中使用动态库]()
+  - [50.1 静态链接允许更多的优化发生]()
+  - [50.2 使用动态库时记得把动态库(dll)拷贝到exe文件目录下]()
+  - [50.3 _declspec(dllimport)]()
+- [五十一. C++中创建与使用库]()
+  - [51.1 项目右键->Add->Reference为项目添加同一个解决方案下的依赖库]()
+  - [51.2 生成动态库时，在声明和定义的函数前均加上_declspec(dllexport),即可同时生成dll与lib]()
+  - [51.3 生成动态库时，在动态库项目Property->Build Events->Post-Build Event->Command Line设置生成后事件，自动将dll文件拷贝到可执行目录文件夹]()
 
 [1]: https://www.bilibili.com/video/BV1uy4y167h2/
 [2]: https://visualstudio.microsoft.com/
